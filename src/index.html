@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class='logoalura' src="imagens/Logo.png" alt="Logo da Alura">
+    </header>
+    
+    <main>
+        <section>
+            <textarea class="text-area" id="mensagem_inicial" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            <div class="informacao">
+                <h6>* Apenas letras minúsculas e sem acento</h6>
+            </div>
+            <div class="botoes">
+                <button onclick="criptografar()" class="btn_encriptar">Criptografar</button>
+                <button onclick="descriptografar()" class="btn_desencriptar">Descriptografar</button>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="mensagem" id="mensagem_criptografada" cols="20" rows="6"></textarea>
+            <button onclick="copiar()" class="btn_copiar">Copiar</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+<footer class="rodape">Desenvolvido por Ana para desafio com Alura/Oracle</footer>
+
+</html>
